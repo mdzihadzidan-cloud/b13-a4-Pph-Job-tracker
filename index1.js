@@ -245,15 +245,15 @@ function renderInterviewCards() {
 }
 
 
-// const imptyCard = document.getElementById("impty-card")
-// if(Total == AllCards.children.length){
-//       imptyCard.classList.add("hidden");
-// } else if (Interview == InterviewCards.children.length ){
-//     imptyCard.classList.add("hidden");
+const imptyCard = document.getElementById("impty-card")
+if(Total == AllCards.children.length){
+      imptyCard.classList.add("hidden");
+} else if (Interview == InterviewCards.children.length ){
+    imptyCard.classList.add("hidden");
 
-// }else if (RejectedCards == filterd-section.children.length){
-//     imptyCard.classList.add("hidden");
-// }else  imptyCard.classList.remove("hidden");
+}else if (RejectedCards == filterd-section.children.length){
+    imptyCard.classList.add("hidden");
+}else  imptyCard.classList.remove("hidden");
 
 
 
