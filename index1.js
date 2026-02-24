@@ -1,6 +1,6 @@
-let InterviewCards = [];
-let RejectedCards = [];
-let CurrentStatus = "togoling-1"; 
+// let InterviewCards = [];
+// let RejectedCards = [];
+// let CurrentStatus = "togoling-1"; 
 
 const Total = document.getElementById("Total");
 const Interview = document.getElementById("Interview");
