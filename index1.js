@@ -246,19 +246,15 @@ function renderInterviewCards() {
 
 
 const imptyCard = document.getElementById("impty-card")
-if(Total == AllCards.children.length){
-      imptyCard.classList.add("hidden");
-} else if (Interview == InterviewCards.children.length ){
-    imptyCard.classList.add("hidden");
+const Interview_Cards = document.getElementById("InterviewCards")
+const Rejected_Cards = document.getElementById("RejectedCards")
+console.log("Interview_Cards",Interview_Cards )
+if( AllCards.children.length == 0){
+      imptyCard.classList.remove("hidden");
+} else if ( Interview_Cards.children.length == 0 ){
+    imptyCard.classList.remove("hidden");
 
-}else if (RejectedCards == filterd-section.children.length){
-    imptyCard.classList.add("hidden");
-}else  imptyCard.classList.remove("hidden");
-
-
-
-
-
-
-
+}else if (Rejected_Cards.children.length == 0){
+    imptyCard.classList.remove("hidden");
+}else  imptyCard.classList.add("hidden");
 
