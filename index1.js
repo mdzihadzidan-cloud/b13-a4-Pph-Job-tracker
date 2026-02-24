@@ -16,9 +16,9 @@ function updateJobsCount() {
   if (CurrentStatus === "togoling-1") {
     jobss.innerText = `${AllCards.children.length} jobs`;
   } else if (CurrentStatus === "togoling-2") {
-    jobss.innerText = `${InterviewCards.length} jobs of ${AllCards.children.length}`;
+    jobss.innerText = `${InterviewCards.length}  of  ${AllCards.children.length} jobs`;
   } else if (CurrentStatus === "togoling-3") {
-    jobss.innerText = `${RejectedCards.length} jobs of ${AllCards.children.length}`;
+    jobss.innerText = `${RejectedCards.length}  of  ${AllCards.children.length} jobs`;
   }
 }
 
