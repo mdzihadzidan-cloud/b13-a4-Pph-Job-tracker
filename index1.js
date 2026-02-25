@@ -258,3 +258,46 @@ if( AllCards.children.length == 0){
     imptyCard.classList.remove("hidden");
 }else  imptyCard.classList.add("hidden");
 
+
+
+
+// ####################
+// ##################
+
+function checkEmpty() {
+    const imptyCard = document.getElementById("impty-card");
+    
+    let isEmpty = false;
+
+    if (CurrentStatus === "togoling-1") {
+        
+        isEmpty = AllCards.children.length === 0;
+    } else if (CurrentStatus === "togoling-2") {
+        
+        isEmpty = InterviewCards.length === 0;
+    } else if (CurrentStatus === "togoling-3") {
+     
+        isEmpty = RejectedCards.length === 0;
+    }
+
+    
+    if (isEmpty) {
+        imptyCard.classList.remove("hidden");
+    } else {
+        imptyCard.classList.add("hidden");
+    }
+}
+checkEmpty()
+
+// #############################
+// ############################
+
+function totalChang() {
+  Total.innerText = AllCards.children.length;
+  Interview.innerText = InterviewCards.length;
+  Rejected.innerText = RejectedCards.length;
+  updateJobsCount();
+  checkEmpty(); 
+}
+totalChang() 
+
